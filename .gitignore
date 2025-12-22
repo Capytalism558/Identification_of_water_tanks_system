@@ -5,6 +5,7 @@
 *.slx~
 *.mat~
 *.slx.autosave
+*.slx.original
 matlab.mat
 crash_dump*
 *.log
