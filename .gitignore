@@ -1,0 +1,42 @@
+# --- MATLAB ---
+# Pliki tymczasowe i logi błędów
+*.asv
+*.m~
+*.slx~
+*.mat~
+*.slx.autosave
+matlab.mat
+crash_dump*
+*.log
+
+# Dane z sesji i profilera
+mlint.xml
+html/
+codoc/
+
+# --- Simulink ---
+# Pliki cache (bardzo ważne, żeby je ignorować!)
+slprj/
+*.slxc
+
+# Pliki generowane przez Simulink Real-Time lub Coder
+*_grt_rtw/
+*_ert_rtw/
+sl_prj/
+
+# Pliki diagnostyczne i raporty
+*.diagnostic
+*.mldatx
+*.html
+
+# --- Pliki binarne i bazy danych ---
+# Ignoruj pliki MEX (zależne od systemu operacyjnego)
+*.mexglx
+*.mexmaci64
+*.mexw32
+*.mexw64
+
+# --- Inne ---
+# Lokalne ustawienia projektu i pliki użytkownika
+.SimulinkProject/
+_autosave*
