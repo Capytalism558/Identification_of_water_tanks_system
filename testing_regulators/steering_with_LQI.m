@@ -6,7 +6,7 @@ load sizes
 cd ../testing_regulators
 
 REGULATOR = 0;
-upper_integral_sat = 100;
+upper_integral_sat = 1;
 
 x3SP = 10;
 x1SP = ((C(3)/C(1)) * x3SP^ALPHA(3))^(1/ALPHA(1));
@@ -22,8 +22,8 @@ B_matrix = [(a * w)^-1; 0; 0]
 C_matrix = [0, 0, 1]
 D_matrix = [0]
 
-Q_matrix = diag([10e5, 1, 10e5, 1])
-R_matrix = 120
+Q_matrix = diag([10e5, 100, 10e5, 0.0001])
+R_matrix = 1200
 
 sys = ss(A_matrix, B_matrix, C_matrix, D_matrix)
 sys_tf = tf(sys)

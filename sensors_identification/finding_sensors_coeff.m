@@ -21,5 +21,5 @@ coeff3 = polyfit(v_meas, v_real, 1)
 sensor_coeff = [coeff1; coeff2; coeff3];
 save("sensors_coeff", "sensor_coeff");
 
-cd ..
+cd ../sensors_identification
 clear;

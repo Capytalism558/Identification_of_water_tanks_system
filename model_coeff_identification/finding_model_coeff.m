@@ -14,6 +14,6 @@ ALPHA = [xopt1(2) xopt2(2) xopt3(2)];
 
 cd ../data
 save ("model_coeff", "C", "ALPHA")
-cd ..
+cd ../model_coeff_identification
 clear
 
