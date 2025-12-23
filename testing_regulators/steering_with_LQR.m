@@ -22,8 +22,8 @@ B_matrix = [(a * w)^-1; 0; 0]
 C_matrix = [0, 0, 1]
 D_matrix = [0]
 
-Q_matrix = diag([10e5, 1, 10e5])
-R_matrix = 120
+Q_matrix = diag([10e5, 10e5 ,10e5])
+R_matrix = 14000
 
 sys_tf = tf(ss(A_matrix, B_matrix, C_matrix, D_matrix))
 
