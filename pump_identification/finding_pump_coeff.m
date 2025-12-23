@@ -15,7 +15,7 @@ pump_fit = linspace(0.53, 1, 200);
 flow_fit = polyval(pump_coeff, pump_fit);
 plot(pump_fit, flow_fit);
 hold off;
-xlabel('Wartoœæ pompy');
+xlabel('Wartoœæ sterowania');
 ylabel('przep³yw [cm^3/s]');
 
 disp("Wielomian pompy:")
